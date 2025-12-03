@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mapa Interactivo</title>
+
+<style>
+    /* Ajusta el ancho deseado sin dañar el mapa */
+    img[usemap] {
+        width: 100%;
+        height: auto;
+        max-width: 1200px;  /* Puedes cambiarlo */
+        display: block;
+        margin: auto;
+    }
+</style>
+
+</head>
+<body>
+
+<img src="mapa.jpg" usemap="#image-map" id="mapa">
+
+<map name="image-map">
+    <area target="_top" alt="BIBLIOTECA" title="BIBLIOTECA" href="https://ibb.co/JjrJJt17" coords="515,360,977,363,977,492,523,498" shape="poly">
+    <area target="_top" alt="CANCHA" title="CANCHA" href="https://ibb.co/fzDG5DT8" coords="520,587,515,799,980,791,977,590" shape="poly">
+    <area target="_top" alt="EXTRAESCOLARES" title="EXTRAESCOLARES" href="https://ibb.co/271NhNKZ" coords="237,551,41,923,319,1066,515,691" shape="poly">
+    <area target="_top" alt="EDIFICIOG" title="EDIFICIOG" href="https://ibb.co/Zzv2JgbP" coords="575,14,553,157,980,262,1010,130" shape="poly">
+    <area target="_top" alt="CANCHAFUT" title="CANCHAFUT" href="https://ibb.co/21SCRTgk" coords="1415,7,1417,463,2122,458,2111,9" shape="poly">
+    <area target="_top" alt="EDIFICIOD" title="EDIFICIOD" href="https://ibb.co/qLtgfTRQ" coords="2562,40,2535,172,3038,274,3060,141" shape="poly">
+    <area target="_top" alt="PUNTODEREUNION" title="PUNTODEREUNION" href="https://ibb.co/1GLLg4J9" coords="1577,667,1574,829,1753,823,1748,672" shape="poly">
+    <area target="_top" alt="EDIFICIOE" title="EDIFICIOE" href="https://ibb.co/7xKp300Y" coords="2455,282,2452,480,2901,486,2906,285" shape="poly">
+    <area target="_top" alt="EDIFICIOB" title="EDIFICIOB" href="https://ibb.co/vvqB0sRr" coords="493,989,493,1112,1065,1118,1073,991" shape="poly">
+    <area target="_top" alt="ESTACIONAMIENTO" title="ESTACIONAMIENTO" href="https://ibb.co/234TpRVs" coords="1858,1523,1852,1751,3099,1746,3101,1528,3115,481,2942,486,2942,1518" shape="poly">
+</map>
+
+<!-- Script mágico que corrige el mapa al redimensionar -->
+<script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+
+<script>
+    imageMapResize();
+</script>
+
+</body>
+</html>
