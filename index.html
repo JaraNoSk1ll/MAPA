@@ -5,11 +5,11 @@
 <title>Mapa Interactivo</title>
 
 <style>
-    /* Ajusta el ancho deseado sin dañar el mapa */
+    /* Ajusta el tamaño responsivo sin romper el mapa */
     img[usemap] {
         width: 100%;
         height: auto;
-        max-width: 1200px;  /* Puedes cambiarlo */
+        max-width: 1200px; /* Puedes modificar este valor */
         display: block;
         margin: auto;
     }
@@ -21,6 +21,7 @@
 <img src="mapa.jpg" usemap="#image-map" id="mapa">
 
 <map name="image-map">
+    <!-- PUNTOS ORIGINALES -->
     <area target="_top" alt="BIBLIOTECA" title="BIBLIOTECA" href="https://ibb.co/JjrJJt17" coords="515,360,977,363,977,492,523,498" shape="poly">
     <area target="_top" alt="CANCHA" title="CANCHA" href="https://ibb.co/fzDG5DT8" coords="520,587,515,799,980,791,977,590" shape="poly">
     <area target="_top" alt="EXTRAESCOLARES" title="EXTRAESCOLARES" href="https://ibb.co/271NhNKZ" coords="237,551,41,923,319,1066,515,691" shape="poly">
@@ -31,9 +32,19 @@
     <area target="_top" alt="EDIFICIOE" title="EDIFICIOE" href="https://ibb.co/7xKp300Y" coords="2455,282,2452,480,2901,486,2906,285" shape="poly">
     <area target="_top" alt="EDIFICIOB" title="EDIFICIOB" href="https://ibb.co/vvqB0sRr" coords="493,989,493,1112,1065,1118,1073,991" shape="poly">
     <area target="_top" alt="ESTACIONAMIENTO" title="ESTACIONAMIENTO" href="https://ibb.co/234TpRVs" coords="1858,1523,1852,1751,3099,1746,3101,1528,3115,481,2942,486,2942,1518" shape="poly">
+
+    <!-- NUEVOS PUNTOS AGREGADOS -->
+    <area target="_top" alt="LABORATORIOS" title="LABORATORIOS" href="https://ibb.co/8Df04CQk" coords="2430,588,2436,690,2854,692,2854,588" shape="poly">
+    <area target="_top" alt="SERVICIOS" title="SERVICIOS" href="https://ibb.co/pjP6NmHQ" coords="2433,769,2436,874,2859,876,2859,766" shape="poly">
+    <area target="_top" alt="COOPERATIVA" title="COOPERATIVA" href="https://ibb.co/Q3p0vsZP" coords="2582,924,2596,1378,2857,1384,2849,927" shape="poly">
+    <area target="_top" alt="EDIFICIO PRINCIPAL" title="EDIFICIO PRINCIPAL" href="https://ibb.co/mFF6kPFX" coords="1522,1052,1525,1308,2103,1297,2100,1034" shape="poly">
+    <area target="_top" alt="EDIFICIOH" title="EDIFICIOH" href="https://ibb.co/6055jN7f" coords="499,1205,507,1337,1074,1326,1069,1208" shape="poly">
+    <area target="_top" alt="PAPELERIA" title="PAPELERIA" href="https://ibb.co/Xfbs9hrh" coords="738,1416,735,1614,1002,1628,1010,1435" shape="poly">
+    <area target="_top" alt="VIGILANCIA" title="VIGILANCIA" href="https://ibb.co/PZFpTqD3" coords="1170,1503,1153,1715,1439,1695,1437,1506" shape="poly">
+    <area target="_top" alt="AUTOBUS" title="AUTOBUS" href="" coords="614,1719,616,1942,1076,1939,1065,1730" shape="poly">
 </map>
 
-<!-- Script mágico que corrige el mapa al redimensionar -->
+<!-- Script que hace el mapa responsivo -->
 <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
 
 <script>
@@ -42,3 +53,4 @@
 
 </body>
 </html>
+
